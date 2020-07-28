@@ -11,5 +11,18 @@
 		<p><a href="http://www.google.com">Click me if your browser is too trash to handle a simple redirect. Or if you're too lazy to wait a few seconds for the redirect (well, obviously there is a delay, otherwise what's the point of this thing that doesn't exist???).</a></p>
 		<p><p/>
 		<p><a href="test">Click me if you think this will do anything different than the other link. Or if you think you're being smart and fill find some "secret page" that actually exists (Spoiler: it doesn't). </a></p>
+		<a href='javascript:openUrl()'>Visit here</a>
+<script>
+var sites=['http://www.google.com/',
+'http://www.msn.com/',
+'http://www.yahoo.com/'
+];
+
+function openUrl(){
+    var i = Math.round(Math.random()*(sites.length-1));
+    window.location.href=sites[i];
+    return false;
+}
+</script>
 	</body>
 </html>
