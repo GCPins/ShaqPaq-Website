@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+	<p>nothing special here, no sir</p>
+</head>	
+		<body>
+			<a href='javascript:openUrl()'>Click me if you think this will do anything different than the other link. Or if you think you're being smart and fill find some "secret page" that actually exists (Spoiler: it doesn't).</a>
+			<script>
+			var sites=['/test/nothingspecial',
+			'/test2/nothingspecial2',
+			'/test3/nothingspecial3',
+			'/test',
+			'/test2',
+			'/test3',
+			'../../',
+			'/test3/nothingspecial3/somethingspecial'
+			];
+			function openUrl(){
+			var i = Math.round(Math.random()*(sites.length-1));
+			window.location.href=sites[i];
+    		return false;
+			}
+			</script>
+		</body>
+		
